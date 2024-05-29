@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    background-color: #eae6e6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+h1 {
+    color: #175cff;
+    font-size: 2.5rem;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    color: #172953;
+    font-size: 4.2rem;
+    font-weight: bold;
+    min-width: 90px;
+}
+
+#milliseconds {
+    font-size: 2rem;
+    color: #525763;
+    width: 90px;
+}
+
+#seconds {
+    width: 100px;
+    margin-right: .5rem;
+}
+
+.container-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#btn-start {
+    background-color: #175cff;
+    color: #fff;
+}
+
+#btn-pause,
+#btn-continue {
+    display: none;
+}
+
+@media screen and (max-width: 470px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .timer {
+        font-size: 2.55rem;
+        gap: .4rem;
+    }
+}
